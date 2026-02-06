@@ -448,6 +448,20 @@ ul {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0.1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 var(--radius-lg) 0 100%;
 }
 
 .service-card:hover {
@@ -541,7 +555,13 @@ ul {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
+}
+
+.about-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .about-lead {
@@ -582,6 +602,14 @@ ul {
 .about-feature span {
     font-size: 0.85rem;
     color: var(--gray);
+}
+
+.about-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80') center/cover no-repeat;
+    box-shadow: var(--shadow-md);
 }
 
 .about-stats {
@@ -742,6 +770,8 @@ ul {
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    background-size: cover;
+    background-position: center;
 }
 
 .review-author strong {
@@ -809,6 +839,7 @@ ul {
 /* Why Choose Us */
 .why-us {
     padding: 100px 0;
+    background: var(--lighter);
 }
 
 .why-us-grid {
@@ -820,6 +851,15 @@ ul {
 .why-card {
     text-align: center;
     padding: 40px 30px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
 }
 
 .why-icon {
