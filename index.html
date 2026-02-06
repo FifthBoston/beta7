@@ -3,31 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dallas Premier Plumbing - Professional plumbing services in Dallas, Texas. Available 24/7 for emergencies. Licensed and insured plumbers.">
-    <title>Dallas Premier Plumbing | Expert Plumbers in Dallas, TX</title>
+    <meta name="description" content="Lone Star Plumbing Pros - Dallas-Fort Worth's trusted plumbing experts. 60+ years serving DFW. 24/7 emergency service, licensed & insured. Call (214) 555-1234.">
+    <meta name="keywords" content="plumber Dallas, plumbing Dallas TX, emergency plumber DFW, drain cleaning, water heater repair, sewer repair Dallas">
+    <title>Lone Star Plumbing Pros | Dallas-Fort Worth's Trusted Plumbers Since 1959</title>
+    <link rel="canonical" href="https://beta7-dallas-plumber.netlify.app/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Plumber",
+      "name": "Lone Star Plumbing Pros",
+      "image": "",
+      "telephone": "+1-214-555-1234",
+      "email": "info@lonestarplumbingpros.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street",
+        "addressLocality": "Dallas",
+        "addressRegion": "TX",
+        "postalCode": "75201",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.7767,
+        "longitude": -96.7970
+      },
+      "url": "https://beta7-dallas-plumber.netlify.app",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": ["Dallas", "Fort Worth", "Plano", "Irving", "Arlington", "Frisco", "McKinney", "Garland", "Richardson", "Carrollton"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "2847"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>🏆 BBB A+ Rated | ⭐ 4.9 Stars (2,847 Reviews)</span>
+                </div>
+                <div class="top-bar-right">
+                    <span>🕐 24/7 Emergency Service</span>
+                    <a href="tel:+12145551234">📞 (214) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <span class="logo-icon">🔧</span>
-                    <span class="logo-text">Dallas Premier Plumbing</span>
-                </div>
+                <a href="/" class="logo">
+                    <span class="logo-icon">⭐</span>
+                    <div class="logo-text">
+                        <span class="logo-name">Lone Star Plumbing Pros</span>
+                        <span class="logo-tagline">Dallas-Fort Worth's Trusted Choice</span>
+                    </div>
+                </a>
                 <nav class="nav">
-                    <a href="#services">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#services">Services ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="#drain-cleaning">Drain Cleaning</a>
+                            <a href="#water-heaters">Water Heaters</a>
+                            <a href="#sewer-repair">Sewer Repair</a>
+                            <a href="#leak-detection">Leak Detection</a>
+                            <a href="#emergency">Emergency Service</a>
+                            <a href="#remodeling">Bathroom Remodeling</a>
+                        </div>
+                    </div>
                     <a href="#about">About</a>
+                    <a href="#areas">Service Areas</a>
                     <a href="#reviews">Reviews</a>
+                    <a href="#specials">Specials</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <a href="tel:+12145551234" class="header-phone">
-                    <span class="phone-icon">📞</span>
-                    (214) 555-1234
+                <a href="tel:+12145551234" class="header-cta btn btn-secondary">
+                    Call Now: (214) 555-1234
                 </a>
                 <button class="mobile-menu-btn" aria-label="Toggle menu">
                     <span></span>
@@ -40,26 +108,74 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Dallas's Most Trusted Plumbing Experts</h1>
-                <p>Fast, reliable, and affordable plumbing services for homes and businesses across the Dallas-Fort Worth metroplex. Available 24/7 for emergencies.</p>
+                <div class="hero-badge">Serving DFW Since 1959 • 60+ Years of Excellence</div>
+                <h1>Dallas-Fort Worth's Most Trusted Plumbing Experts</h1>
+                <p>Family-owned and operated for three generations. From emergency repairs to complete remodels, our licensed master plumbers deliver award-winning service with upfront pricing and a 100% satisfaction guarantee.</p>
                 <div class="hero-buttons">
-                    <a href="tel:+12145551234" class="btn btn-primary">Call Now: (214) 555-1234</a>
-                    <a href="#contact" class="btn btn-secondary">Get Free Estimate</a>
+                    <a href="tel:+12145551234" class="btn btn-primary btn-lg">
+                        <span class="btn-icon">📞</span>
+                        Call Now: (214) 555-1234
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-lg">
+                        <span class="btn-icon">📋</span>
+                        Get Free Estimate
+                    </a>
                 </div>
-                <div class="hero-badges">
-                    <div class="badge">
-                        <span class="badge-icon">✓</span>
-                        Licensed & Insured
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Licensed & Insured</span>
                     </div>
-                    <div class="badge">
-                        <span class="badge-icon">✓</span>
-                        24/7 Emergency Service
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>24/7 Emergency Service</span>
                     </div>
-                    <div class="badge">
-                        <span class="badge-icon">✓</span>
-                        Free Estimates
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Free Estimates</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Same-Day Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <div class="trust-icon">🏆</div>
+                    <div class="trust-text">
+                        <strong>BBB A+ Rating</strong>
+                        <span>60+ Years Accredited</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⭐</div>
+                    <div class="trust-text">
+                        <strong>4.9 Star Rating</strong>
+                        <span>2,847+ Reviews</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🛡️</div>
+                    <div class="trust-text">
+                        <strong>Fully Licensed</strong>
+                        <span>TX Master Plumber #M-12345</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <div class="trust-text">
+                        <strong>Upfront Pricing</strong>
+                        <span>No Hidden Fees</span>
                     </div>
                 </div>
             </div>
@@ -70,76 +186,209 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive plumbing solutions for every need</p>
+                <span class="section-tag">Our Services</span>
+                <h2>Comprehensive Plumbing Solutions</h2>
+                <p>From routine maintenance to emergency repairs, our expert plumbers handle it all with precision and care.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" id="drain-cleaning">
                     <div class="service-icon">🚿</div>
-                    <h3>Drain Cleaning</h3>
-                    <p>Clogged drains? We use advanced hydro-jetting and snaking techniques to clear any blockage fast.</p>
+                    <h3>Drain Cleaning & Clearing</h3>
+                    <p>Stubborn clogs don't stand a chance. We use advanced hydro-jetting, video camera inspection, and professional snaking to clear any blockage and restore full flow to your drains.</p>
+                    <ul class="service-list">
+                        <li>Kitchen & bathroom drains</li>
+                        <li>Main sewer line clearing</li>
+                        <li>Hydro-jetting service</li>
+                        <li>Video camera inspection</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Request Service →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="water-heaters">
                     <div class="service-icon">🔥</div>
-                    <h3>Water Heater Repair</h3>
-                    <p>Expert repair and installation of tankless and traditional water heaters. Same-day service available.</p>
+                    <h3>Water Heater Services</h3>
+                    <p>Expert installation, repair, and maintenance for all water heater types. We'll help you choose the right system for your home and budget, with same-day service available.</p>
+                    <ul class="service-list">
+                        <li>Tank & tankless installation</li>
+                        <li>Electric & gas water heaters</li>
+                        <li>Hybrid/heat pump systems</li>
+                        <li>24/7 emergency repair</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Request Service →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🚽</div>
-                    <h3>Toilet Repair</h3>
-                    <p>From simple fixes to complete replacements, we handle all toilet issues quickly and cleanly.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💧</div>
-                    <h3>Leak Detection</h3>
-                    <p>State-of-the-art equipment to find hidden leaks before they cause major damage to your property.</p>
-                </div>
-                <div class="service-card">
+                <div class="service-card" id="sewer-repair">
                     <div class="service-icon">🏠</div>
                     <h3>Sewer Line Repair</h3>
-                    <p>Trenchless sewer repair and replacement. Minimal disruption to your yard and landscaping.</p>
+                    <p>Minimize disruption with our advanced trenchless sewer repair technology. We fix broken, cracked, or collapsed sewer lines without destroying your yard or landscaping.</p>
+                    <ul class="service-list">
+                        <li>Trenchless pipe repair</li>
+                        <li>Sewer line replacement</li>
+                        <li>Root removal</li>
+                        <li>Camera inspections</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Request Service →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="leak-detection">
+                    <div class="service-icon">💧</div>
+                    <h3>Leak Detection & Repair</h3>
+                    <p>Hidden leaks can cause thousands in damage. Our state-of-the-art detection equipment pinpoints leaks behind walls, under slabs, and in hard-to-reach areas without unnecessary demolition.</p>
+                    <ul class="service-list">
+                        <li>Slab leak detection</li>
+                        <li>Underground leak repair</li>
+                        <li>Pipe leak repair</li>
+                        <li>Whole-home repiping</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Request Service →</a>
+                </div>
+                <div class="service-card" id="emergency">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Plumbing</h3>
+                    <p>Plumbing emergencies don't wait for business hours, and neither do we. Our emergency team is available 24/7/365 to handle burst pipes, sewage backups, and other urgent situations.</p>
+                    <ul class="service-list">
+                        <li>24/7 availability</li>
+                        <li>60-minute response time</li>
+                        <li>Burst pipe repair</li>
+                        <li>Sewage backup cleanup</li>
+                    </ul>
+                    <a href="tel:+12145551234" class="service-link">Call Now →</a>
+                </div>
+                <div class="service-card" id="remodeling">
                     <div class="service-icon">🛁</div>
-                    <h3>Bathroom Remodeling</h3>
-                    <p>Complete bathroom plumbing for renovations. Expert installation of fixtures and piping.</p>
+                    <h3>Bathroom & Kitchen Remodeling</h3>
+                    <p>Transform your space with expert plumbing installation. From luxury bathroom renovations to complete kitchen overhauls, we handle all the plumbing for your remodeling project.</p>
+                    <ul class="service-list">
+                        <li>Fixture installation</li>
+                        <li>Pipe relocation</li>
+                        <li>New construction plumbing</li>
+                        <li>ADA-compliant installations</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Request Service →</a>
+                </div>
+            </div>
+            <div class="services-more">
+                <h3>Additional Services We Offer</h3>
+                <div class="services-tags">
+                    <span>Toilet Repair & Installation</span>
+                    <span>Faucet Repair</span>
+                    <span>Garbage Disposals</span>
+                    <span>Sump Pumps</span>
+                    <span>Gas Line Repair</span>
+                    <span>Water Filtration</span>
+                    <span>Backflow Prevention</span>
+                    <span>Commercial Plumbing</span>
+                    <span>Winterization</span>
+                    <span>Well Pump Service</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Dallas Chooses Us</h2>
-                    <p>For over 15 years, Dallas Premier Plumbing has been the trusted choice for homeowners and businesses throughout the DFW metroplex. Our commitment to quality workmanship, honest pricing, and exceptional customer service sets us apart.</p>
-                    <ul class="about-list">
-                        <li><strong>Experienced Technicians:</strong> Our plumbers have 10+ years average experience</li>
-                        <li><strong>Upfront Pricing:</strong> No hidden fees or surprise charges</li>
-                        <li><strong>Satisfaction Guaranteed:</strong> We stand behind every job we complete</li>
-                        <li><strong>Fast Response:</strong> Same-day service for most calls</li>
-                        <li><strong>Clean & Professional:</strong> We treat your home with respect</li>
-                    </ul>
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2>Three Generations of Plumbing Excellence</h2>
+                    <p class="about-lead">Since 1959, Lone Star Plumbing Pros has been the trusted choice for homeowners and businesses throughout the Dallas-Fort Worth metroplex.</p>
+                    <p>What started as a small family operation has grown into one of DFW's most respected plumbing companies. Our founder learned the trade from his father, and today, the third generation continues that legacy of excellence, integrity, and superior craftsmanship.</p>
+                    <p>We've built our reputation on doing things right the first time, treating every home like our own, and standing behind our work with a 100% satisfaction guarantee. Our master plumbers average 15+ years of experience, and every team member is background-checked, drug-tested, and committed to providing 5-star service.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="about-feature-icon">👨‍👩‍👦</span>
+                            <div>
+                                <strong>Family Owned</strong>
+                                <span>Three generations strong</span>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <span class="about-feature-icon">📜</span>
+                            <div>
+                                <strong>Licensed & Insured</strong>
+                                <span>Full liability coverage</span>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <span class="about-feature-icon">💯</span>
+                            <div>
+                                <strong>Satisfaction Guaranteed</strong>
+                                <span>100% or your money back</span>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <span class="about-feature-icon">🎓</span>
+                            <div>
+                                <strong>Expert Technicians</strong>
+                                <span>15+ years avg. experience</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat">
-                        <div class="stat-number">15+</div>
+                    <div class="stat-card">
+                        <div class="stat-number">60+</div>
                         <div class="stat-label">Years in Business</div>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">10K+</div>
+                    <div class="stat-card">
+                        <div class="stat-number">50K+</div>
                         <div class="stat-label">Jobs Completed</div>
                     </div>
-                    <div class="stat">
+                    <div class="stat-card">
                         <div class="stat-number">4.9</div>
                         <div class="stat-label">Star Rating</div>
                     </div>
-                    <div class="stat">
+                    <div class="stat-card">
                         <div class="stat-number">24/7</div>
                         <div class="stat-label">Emergency Service</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-tag">Hot Deals</span>
+                <h2>Current Specials & Offers</h2>
+                <p>Quality plumbing services at prices that won't break the bank</p>
+            </div>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-badge">Most Popular</div>
+                    <div class="special-price">$49</div>
+                    <h3>Drain Clearing</h3>
+                    <p>We clear your drain or it's FREE! Professional clearing of any single drain.</p>
+                    <small>*Some restrictions apply. Call for details.</small>
+                    <a href="#contact" class="btn btn-primary">Claim Offer</a>
+                </div>
+                <div class="special-card">
+                    <div class="special-price">FREE</div>
+                    <h3>Camera Inspection</h3>
+                    <p>See exactly what's in your drains with our HD sewer camera inspection.</p>
+                    <small>*With paid drain service. $199 value.</small>
+                    <a href="#contact" class="btn btn-primary">Claim Offer</a>
+                </div>
+                <div class="special-card">
+                    <div class="special-price">$250 OFF</div>
+                    <h3>Tankless Water Heater</h3>
+                    <p>Save $250 on any tankless water heater installation.</p>
+                    <small>*Cannot be combined with other offers. Expires 3/31/26.</small>
+                    <a href="#contact" class="btn btn-primary">Claim Offer</a>
+                </div>
+                <div class="special-card">
+                    <div class="special-price">FREE</div>
+                    <h3>Second Opinions</h3>
+                    <p>Not sure about a quote you received? We'll give you an honest second opinion.</p>
+                    <small>*Contact us today for details.</small>
+                    <a href="#contact" class="btn btn-primary">Claim Offer</a>
+                </div>
+            </div>
+            <div class="specials-financing">
+                <div class="financing-content">
+                    <h3>Flexible Financing Available</h3>
+                    <p>Don't let budget concerns delay necessary repairs. We offer financing options up to 72 months with approved credit.</p>
+                    <a href="#contact" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
         </div>
@@ -149,62 +398,193 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Testimonials</span>
                 <h2>What Our Customers Say</h2>
-                <p>Don't just take our word for it</p>
+                <p>Don't just take our word for it — see why thousands of DFW homeowners choose Lone Star Plumbing Pros</p>
             </div>
             <div class="reviews-grid">
                 <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Called them at 2 AM with a burst pipe. They were here in 30 minutes and had everything fixed within the hour. Absolute lifesavers!"</p>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Called at 2 AM with a burst pipe flooding our kitchen. They were here in 35 minutes and had everything fixed by sunrise. Absolute lifesavers! Fair price for emergency work too."</p>
                     <div class="review-author">
-                        <strong>Michael R.</strong>
-                        <span>Highland Park</span>
+                        <div class="review-avatar">MR</div>
+                        <div>
+                            <strong>Michael R.</strong>
+                            <span>Highland Park, TX</span>
+                        </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Best plumbing experience I've ever had. Fair price, showed up on time, and explained everything clearly. Will definitely use again."</p>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Best plumbing experience ever. Marcus showed up on time, explained everything clearly, gave us options at different price points, and finished ahead of schedule. Will definitely use again!"</p>
                     <div class="review-author">
-                        <strong>Sarah T.</strong>
-                        <span>Plano</span>
+                        <div class="review-avatar">ST</div>
+                        <div>
+                            <strong>Sarah T.</strong>
+                            <span>Plano, TX</span>
+                        </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"They replaced our entire water heater system. Professional, clean, and the price was exactly what they quoted. Highly recommend!"</p>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"They replaced our entire water heater system and repiped half our house. Professional, clean, and the price was exactly what they quoted. No surprises, no upselling. Highly recommend!"</p>
                     <div class="review-author">
-                        <strong>David & Lisa K.</strong>
-                        <span>Frisco</span>
+                        <div class="review-avatar">DK</div>
+                        <div>
+                            <strong>David & Lisa K.</strong>
+                            <span>Frisco, TX</span>
+                        </div>
                     </div>
                 </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Had a tricky slab leak that two other companies couldn't find. Lone Star found it in an hour with their detection equipment and fixed it with minimal damage to our floors. True experts!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">JM</div>
+                        <div>
+                            <strong>Jennifer M.</strong>
+                            <span>Richardson, TX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"We've used Lone Star for our rental properties for 5 years now. Always responsive, always fair pricing, and they communicate everything clearly. Best plumber in DFW hands down."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">RB</div>
+                        <div>
+                            <strong>Robert B.</strong>
+                            <span>Irving, TX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Complete bathroom remodel plumbing done perfectly. They worked great with our contractor, showed up every day on time, and the craftsmanship is beautiful. Worth every penny!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">AP</div>
+                        <div>
+                            <strong>Amanda P.</strong>
+                            <span>McKinney, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-cta">
+                <p>⭐ 4.9 average rating from 2,847+ verified reviews on Google, Yelp, and BBB</p>
             </div>
         </div>
     </section>
 
-    <!-- Service Areas -->
-    <section class="areas">
+    <!-- Service Areas Section -->
+    <section id="areas" class="areas">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-tag">Coverage</span>
+                <h2>Proudly Serving the Dallas-Fort Worth Metroplex</h2>
+                <p>Fast, reliable service throughout DFW and surrounding communities</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-column">
+                    <h3>Dallas County</h3>
+                    <ul>
+                        <li><a href="dallas.html">Dallas</a></li>
+                        <li><a href="irving.html">Irving</a></li>
+                        <li><a href="garland.html">Garland</a></li>
+                        <li><a href="mesquite.html">Mesquite</a></li>
+                        <li><a href="richardson.html">Richardson</a></li>
+                        <li><a href="carrollton.html">Carrollton</a></li>
+                        <li><a href="farmers-branch.html">Farmers Branch</a></li>
+                        <li><a href="highland-park.html">Highland Park</a></li>
+                        <li><a href="university-park.html">University Park</a></li>
+                        <li><a href="balch-springs.html">Balch Springs</a></li>
+                    </ul>
+                </div>
+                <div class="area-column">
+                    <h3>Collin County</h3>
+                    <ul>
+                        <li><a href="plano.html">Plano</a></li>
+                        <li><a href="frisco.html">Frisco</a></li>
+                        <li><a href="mckinney.html">McKinney</a></li>
+                        <li><a href="allen.html">Allen</a></li>
+                        <li><a href="wylie.html">Wylie</a></li>
+                        <li><a href="murphy.html">Murphy</a></li>
+                        <li><a href="prosper.html">Prosper</a></li>
+                        <li><a href="celina.html">Celina</a></li>
+                    </ul>
+                </div>
+                <div class="area-column">
+                    <h3>Denton County</h3>
+                    <ul>
+                        <li><a href="denton.html">Denton</a></li>
+                        <li><a href="lewisville.html">Lewisville</a></li>
+                        <li><a href="flower-mound.html">Flower Mound</a></li>
+                        <li><a href="the-colony.html">The Colony</a></li>
+                        <li><a href="little-elm.html">Little Elm</a></li>
+                        <li><a href="corinth.html">Corinth</a></li>
+                    </ul>
+                </div>
+                <div class="area-column">
+                    <h3>Tarrant County</h3>
+                    <ul>
+                        <li><a href="fort-worth.html">Fort Worth</a></li>
+                        <li><a href="arlington.html">Arlington</a></li>
+                        <li><a href="grand-prairie.html">Grand Prairie</a></li>
+                        <li><a href="mansfield.html">Mansfield</a></li>
+                        <li><a href="euless.html">Euless</a></li>
+                        <li><a href="bedford.html">Bedford</a></li>
+                        <li><a href="hurst.html">Hurst</a></li>
+                        <li><a href="grapevine.html">Grapevine</a></li>
+                        <li><a href="southlake.html">Southlake</a></li>
+                        <li><a href="colleyville.html">Colleyville</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areas-note">
+                <p>Don't see your city? We likely serve your area too! <a href="#contact">Contact us</a> to confirm service availability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
         <div class="container">
             <div class="section-header">
-                <h2>Serving the Dallas-Fort Worth Metroplex</h2>
-                <p>Proudly serving these communities and surrounding areas</p>
+                <span class="section-tag">Why Choose Us</span>
+                <h2>The Lone Star Difference</h2>
+                <p>What sets us apart from other plumbing companies in DFW</p>
             </div>
-            <div class="areas-list">
-                <span>Dallas</span>
-                <span>Fort Worth</span>
-                <span>Plano</span>
-                <span>Irving</span>
-                <span>Arlington</span>
-                <span>Frisco</span>
-                <span>McKinney</span>
-                <span>Garland</span>
-                <span>Richardson</span>
-                <span>Carrollton</span>
-                <span>Denton</span>
-                <span>Lewisville</span>
-                <span>Allen</span>
-                <span>Flower Mound</span>
-                <span>Highland Park</span>
-                <span>University Park</span>
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-icon">⏰</div>
+                    <h3>Rapid Response</h3>
+                    <p>We respect your time. Our plumbers arrive within the scheduled window, and for emergencies, we guarantee a 60-minute response.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💵</div>
+                    <h3>Upfront Pricing</h3>
+                    <p>No surprises, no hidden fees. We provide detailed, written estimates before any work begins. The price we quote is the price you pay.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🔧</div>
+                    <h3>Expert Technicians</h3>
+                    <p>Our master plumbers average 15+ years of experience. Every technician is licensed, background-checked, and continuously trained.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🏠</div>
+                    <h3>Respect for Your Home</h3>
+                    <p>We treat your home like our own. Booties on feet, drop cloths down, and we clean up completely when the job is done.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">✅</div>
+                    <h3>Guaranteed Satisfaction</h3>
+                    <p>We stand behind every job with a 100% satisfaction guarantee. If you're not happy, we'll make it right—period.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">📱</div>
+                    <h3>Clear Communication</h3>
+                    <p>You'll know who's coming, when they'll arrive, and exactly what work will be done. No jargon, no runaround—just honest answers.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -212,74 +592,106 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="contact-content">
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <h2>Get Your Free Estimate</h2>
-                    <p>Ready to solve your plumbing problems? Contact us today for a free, no-obligation estimate.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-icon">📞</span>
+                    <span class="section-tag">Get Started</span>
+                    <h2>Request Your Free Estimate</h2>
+                    <p>Ready to solve your plumbing problems? Contact us today for a free, no-obligation estimate. Most calls answered in under 60 seconds!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:+12145551234" class="contact-method">
+                            <div class="contact-method-icon">📞</div>
                             <div>
-                                <strong>Phone</strong>
-                                <a href="tel:+12145551234">(214) 555-1234</a>
+                                <strong>Call Us 24/7</strong>
+                                <span>(214) 555-1234</span>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
+                        </a>
+                        <a href="mailto:info@lonestarplumbingpros.com" class="contact-method">
+                            <div class="contact-method-icon">📧</div>
                             <div>
-                                <strong>Email</strong>
-                                <a href="mailto:info@dallaspremierplumbing.com">info@dallaspremierplumbing.com</a>
+                                <strong>Email Us</strong>
+                                <span>info@lonestarplumbingpros.com</span>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">📍</div>
                             <div>
-                                <strong>Address</strong>
+                                <strong>Visit Us</strong>
                                 <span>1234 Main Street, Dallas, TX 75201</span>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🕐</span>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">🕐</div>
                             <div>
-                                <strong>Hours</strong>
-                                <span>24/7 Emergency Service<br>Office: Mon-Fri 8AM-6PM</span>
+                                <strong>Business Hours</strong>
+                                <span>24/7 Emergency Service<br>Office: Mon-Fri 7AM-7PM, Sat 8AM-5PM</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
+                    <h3>Get Your Free Quote</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(214) 555-1234">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required placeholder="Dallas">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service" name="service">
+                        <label for="service">Service Needed *</label>
+                        <select id="service" name="service" required>
                             <option value="">Select a service...</option>
                             <option value="drain">Drain Cleaning</option>
-                            <option value="water-heater">Water Heater</option>
+                            <option value="water-heater">Water Heater Repair/Install</option>
+                            <option value="leak">Leak Detection & Repair</option>
+                            <option value="sewer">Sewer Line Service</option>
                             <option value="toilet">Toilet Repair</option>
-                            <option value="leak">Leak Detection</option>
-                            <option value="sewer">Sewer Line</option>
-                            <option value="remodel">Bathroom Remodel</option>
+                            <option value="faucet">Faucet/Fixture Repair</option>
+                            <option value="remodel">Bathroom/Kitchen Remodel</option>
                             <option value="emergency">Emergency Service</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your plumbing issue..."></textarea>
+                        <label for="message">Describe Your Issue</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your plumbing problem..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="consent" name="consent">
+                        <label for="consent">I consent to receive calls/texts about my service request.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full btn-lg">Request Free Estimate</button>
+                    <p class="form-note">🔒 Your information is secure and never shared.</p>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA -->
+    <section class="emergency-cta">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-text">
+                    <h2>🚨 Plumbing Emergency?</h2>
+                    <p>Burst pipes, sewage backups, and flooding can't wait. Our emergency team is standing by 24/7.</p>
+                </div>
+                <a href="tel:+12145551234" class="btn btn-primary btn-lg">
+                    Call Now: (214) 555-1234
+                </a>
             </div>
         </div>
     </section>
@@ -287,38 +699,62 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">🔧</span>
-                        <span class="logo-text">Dallas Premier Plumbing</span>
+                        <span class="logo-icon">⭐</span>
+                        <span class="logo-name">Lone Star Plumbing Pros</span>
                     </div>
-                    <p>Your trusted plumbing experts in Dallas-Fort Worth. Licensed, insured, and committed to excellence.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="#services">Services</a>
-                    <a href="#about">About Us</a>
-                    <a href="#reviews">Reviews</a>
-                    <a href="#contact">Contact</a>
+                    <p>Family-owned and operated since 1959. Three generations of plumbing excellence serving the Dallas-Fort Worth metroplex.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Google">G</a>
+                        <a href="#" aria-label="Yelp">Y</a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
-                    <a href="#services">Drain Cleaning</a>
-                    <a href="#services">Water Heaters</a>
-                    <a href="#services">Leak Detection</a>
-                    <a href="#services">Sewer Repair</a>
+                    <a href="#drain-cleaning">Drain Cleaning</a>
+                    <a href="#water-heaters">Water Heaters</a>
+                    <a href="#sewer-repair">Sewer Repair</a>
+                    <a href="#leak-detection">Leak Detection</a>
+                    <a href="#emergency">Emergency Service</a>
+                    <a href="#remodeling">Remodeling</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Service Areas</h4>
+                    <a href="dallas.html">Dallas</a>
+                    <a href="plano.html">Plano</a>
+                    <a href="frisco.html">Frisco</a>
+                    <a href="fort-worth.html">Fort Worth</a>
+                    <a href="arlington.html">Arlington</a>
+                    <a href="#areas">View All Areas</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#specials">Specials</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
-                    <p>📞 (214) 555-1234</p>
-                    <p>📧 info@dallaspremierplumbing.com</p>
-                    <p>📍 Dallas, TX 75201</p>
+                    <p>📞 <a href="tel:+12145551234">(214) 555-1234</a></p>
+                    <p>📧 <a href="mailto:info@lonestarplumbingpros.com">info@lonestarplumbingpros.com</a></p>
+                    <p>📍 1234 Main Street<br>Dallas, TX 75201</p>
+                    <p class="footer-license">TX Master Plumber License #M-12345</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Dallas Premier Plumbing. All rights reserved.</p>
-                <p>TX Master Plumber License #M-12345</p>
+                <p>&copy; 2026 Lone Star Plumbing Pros. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
             </div>
         </div>
     </footer>

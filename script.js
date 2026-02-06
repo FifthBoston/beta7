@@ -15,18 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
+            if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
         });
     });
     
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            
+            const target = document.querySelector(href);
             if (target) {
+                e.preventDefault();
                 const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = target.offsetTop - headerHeight;
+                const targetPosition = target.offsetTop - headerHeight - 20;
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -52,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Form submission handler
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+    const forms = document.querySelectorAll('.contact-form');
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Get form data
@@ -68,11 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Thank you for your message! We will contact you shortly.');
             this.reset();
         });
-    }
+    });
     
     // Phone number formatting
-    const phoneInput = document.getElementById('phone');
-    if (phoneInput) {
+    const phoneInputs = document.querySelectorAll('input[type="tel"]');
+    phoneInputs.forEach(phoneInput => {
         phoneInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             
@@ -84,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             e.target.value = value;
         });
-    }
+    });
     
     // Intersection Observer for animations
     const observerOptions = {
@@ -101,12 +104,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    // Observe service cards and review cards
-    document.querySelectorAll('.service-card, .review-card, .stat').forEach(el => {
+    // Observe service cards, review cards, and stat cards
+    document.querySelectorAll('.service-card, .review-card, .stat-card, .special-card, .why-card').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+    
+    // Dropdown menu for mobile
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                const menu = this.querySelector('.dropdown-menu');
+                if (menu) {
+                    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+        });
     });
 });
 
@@ -124,6 +140,7 @@ style.textContent = `
             flex-direction: column;
             padding: 20px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            gap: 0;
         }
         
         .nav.active {
@@ -145,6 +162,16 @@ style.textContent = `
         
         .mobile-menu-btn.active span:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -6px);
+        }
+        
+        .dropdown-menu {
+            position: static !important;
+            box-shadow: none !important;
+            padding-left: 20px !important;
+            display: none;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: none !important;
         }
     }
 `;

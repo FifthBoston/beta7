@@ -1,55 +1,99 @@
-# Dallas Premier Plumbing Website
+# Lone Star Plumbing Pros Website
 
-A professional, responsive website for a plumbing business in Dallas, Texas.
+A comprehensive, SEO-optimized website for a plumbing company serving the Dallas-Fort Worth metroplex.
 
 ## Features
 
 - 📱 Fully responsive design (mobile, tablet, desktop)
-- 🎨 Modern, clean aesthetic with professional color scheme
+- 🎨 Modern, professional design with trust indicators
 - ⚡ Fast loading with minimal dependencies
-- 📝 Contact form with phone number formatting
-- 🔍 SEO-optimized with meta tags
-- ♿ Accessible navigation and form labels
+- 🔍 SEO-optimized with schema markup
+- 📍 34 location-specific city pages for local SEO
+- 📝 Contact forms with phone formatting
 - 🎭 Smooth scroll animations
+- ♿ Accessible navigation and form labels
+
+## Pages
+
+### Main Pages
+- `index.html` - Homepage with full service overview
+- 34 city-specific landing pages for local SEO
+
+### City Pages Include:
+**Dallas County:** Dallas, Irving, Garland, Mesquite, Richardson, Carrollton, Farmers Branch, Highland Park, University Park, Balch Springs
+
+**Collin County:** Plano, Frisco, McKinney, Allen, Wylie, Murphy, Prosper, Celina
+
+**Denton County:** Denton, Lewisville, Flower Mound, The Colony, Little Elm, Corinth
+
+**Tarrant County:** Fort Worth, Arlington, Grand Prairie, Mansfield, Euless, Bedford, Hurst, Grapevine, Southlake, Colleyville
+
+## SEO Features
+
+- Unique meta descriptions for each city page
+- Local schema.org markup (LocalBusiness/Plumber)
+- Semantic HTML5 structure
+- Canonical URLs
+- Internal linking between city pages
+- Location-specific content and keywords
 
 ## Sections
 
-1. **Header** - Fixed navigation with phone CTA
-2. **Hero** - Main value proposition with call-to-action buttons
-3. **Services** - 6 service cards with icons
-4. **About** - Company info with stats
-5. **Reviews** - Customer testimonials
-6. **Service Areas** - Coverage map (DFW metroplex)
-7. **Contact** - Form + contact details
-8. **Footer** - Links and contact info
+1. **Top Bar** - Trust badges and phone CTA
+2. **Header** - Sticky navigation with dropdown
+3. **Hero** - Main value proposition
+4. **Trust Bar** - BBB, ratings, credentials
+5. **Services** - 6 main service cards + additional services
+6. **About** - Company history and stats
+7. **Specials** - Current deals and financing
+8. **Reviews** - Customer testimonials
+9. **Service Areas** - Organized by county with links
+10. **Why Choose Us** - Key differentiators
+11. **Contact** - Form + contact methods
+12. **Emergency CTA** - Prominent call button
+13. **Footer** - Full sitemap and contact
 
 ## Tech Stack
 
 - HTML5
 - CSS3 (custom properties, flexbox, grid)
-- Vanilla JavaScript (no frameworks)
+- Vanilla JavaScript
 - Google Fonts (Inter)
 
-## Getting Started
+## Deployment
 
-Simply open `index.html` in a browser, or deploy to any static hosting:
-
-- GitHub Pages
-- Netlify
-- Vercel
-- Any web server
+Currently deployed on Netlify:
+- **Live URL:** https://beta7-dallas-plumber.netlify.app
+- **Admin:** https://app.netlify.com/projects/beta7-dallas-plumber
 
 ## Customization
 
 To customize for a real business:
 
-1. Replace phone number `(214) 555-1234` with actual number
+1. Replace phone number `(214) 555-1234`
 2. Update email address
-3. Replace address
-4. Update license number in footer
+3. Replace physical address
+4. Update TX license number
 5. Add real customer reviews
-6. Optionally add Google Analytics
-7. Connect form to a backend or service (Formspree, Netlify Forms, etc.)
+6. Connect form to backend (Formspree, Netlify Forms, etc.)
+7. Add Google Analytics
+8. Add real images/photos
+9. Update business name if needed
+
+## File Structure
+
+```
+beta7/
+├── index.html          # Main homepage
+├── styles.css          # All styles
+├── script.js           # JavaScript functionality
+├── README.md           # This file
+├── generate-cities.js  # Script used to generate city pages
+├── dallas.html         # City page
+├── plano.html          # City page
+├── frisco.html         # City page
+└── ... (34 total city pages)
+```
 
 ## License
 
