@@ -1128,6 +1128,24 @@ ul {
     color: var(--white);
 }
 
+.footer-credit {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+}
+
+.footer-credit a {
+    color: rgba(255,255,255,0.7);
+    transition: color 0.3s;
+}
+
+.footer-credit a:hover {
+    color: var(--secondary);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .footer-grid {

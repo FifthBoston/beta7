@@ -418,6 +418,9 @@ ${cities.filter(c => c.slug !== city.slug).slice(0, 12).map(c => `              
             <div class="footer-bottom">
                 <p>&copy; 2026 Lone Star Plumbing Pros. All rights reserved.</p>
             </div>
+            <div class="footer-credit">
+                <p>Designed with ❤️ by <a href="https://fifthboston.services/" target="_blank" rel="noopener">FifthBoston.Services</a></p>
+            </div>
         </div>
     </footer>
 
