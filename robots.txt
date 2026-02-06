@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beta7-dallas-plumber.netlify.app/sitemap.xml
