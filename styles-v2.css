@@ -597,6 +597,8 @@ p {
 
 .hero-content {
     max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-badge {
@@ -2244,8 +2246,78 @@ footer {
 .service-hero p {
     font-size: 1.2rem;
     max-width: 700px;
-    margin: 0 auto var(--space-2xl);
+    margin: 0 auto var(--space-lg);
     opacity: 0.9;
+}
+
+.service-subtitle {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brass-light);
+    margin-bottom: var(--space-lg);
+}
+
+.service-desc {
+    color: rgba(255,255,255,0.85);
+}
+
+.service-price-hero {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: var(--space-xl);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.service-price-hero strong {
+    font-size: 1.5rem;
+    color: var(--brass-light);
+}
+
+.service-hero .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-xl);
+}
+
+.service-hero .hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.service-hero .hero-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.08);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+}
+
+.service-hero .feature-icon {
+    color: var(--brass-light);
+    font-weight: bold;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero-text {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .service-content {
