@@ -1078,7 +1078,8 @@ p {
     }
 }
 
-.about-stats {
+/* Stats inside about-image-container (homepage) */
+.about-image-container .about-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
@@ -1087,6 +1088,19 @@ p {
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 60px);
+}
+
+/* Stats as direct child of about-grid (city pages) */
+.about-grid > .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    align-self: start;
 }
 
 .stat-card {
